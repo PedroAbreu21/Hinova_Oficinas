@@ -1,3 +1,67 @@
 <resources>
     <string name="app_name">Hinova Oficinas</string>
+    <string name="login">Entrar</string>
+    <string name="edt_name_hilt">Nome</string>
+    <string name="edt_email_hilt">Email</string>
+    <string name="edt_cpf_hilt">Cpf</string>
+    <string name="edt_phone_hilt">Celular</string>
+    <string name="edt_plate_hilt">Placa do Veiculo</string>
+    <string name="edt_password_hilt">Senha</string>
+    <string name="lbl_version">Versão: 0.0.1</string>
+
+    <string-array name="userTypes">
+        <item>Consultor</item>
+        <item>Associado</item>
+    </string-array>
+
+    <string name="alert_positive">Sim</string>
+    <string name="alert_negative">Não</string>
+    <string name="alert_tittle">Alerta</string>
+    <string name="alert_message_select_activity">Verificamos que já existe uma conta de %1$s conectada, deseja sair para acessar como %2$s?</string>
+    <string name="alert_message_login_activity">Verificamos que está tentando acessar uma conta de %1$s por meio da tela de login de %2$s. Deseja continuar?</string>
+
+    <string name="error_display_empty">Obrigatorio*</string>
+    <string-array name="errorArraySignIn">
+        <item>E-mail fornecido não corresponde a um usuário registrado.</item>
+        <item>E-mail ou senha incorretos.</item>
+        <item>Não foi possivel efetuar o login, verifique sua internet e tente novamente.</item>
+        <item>Muitas tentativas de login incorretas foram feitas, aguarde um momento e tente novamente.</item>
+        <item>Ocorreu um erro ao efetuar o login, tente novamente mais tarde ou contacte o suporte.</item>
+    </string-array>
+    <string-array name="errorArrayRegister">
+        <item>A senha deve conter no minimo 6 caracteres</item>
+        <item>E-mail já cadastrado</item>
+        <item>Digite um E-mail valido</item>
+        <item>Erro ao cadastrar usuário, tente novamente mais tarde ou contacte o suporte.</item>
+    </string-array>
+
+    <string name="toast_generic_error">Ocorreu um erro, tente novamente mais tarde ou contacte o suporte</string>
+
+    <string name="txt_tittle_select_user">Entrar como</string>
+    <string name="txt_tittle_login">Login %s</string>
+    <string name="txt_tittle_friend_indication">Indicar Amigo</string>
+    <string name="txt_tittle_workshop_list">Lista de Oficinas</string>
+    <string name="txt_sub_tittle_friend_indication">Dados do Amigo</string>
+    <string name="txt_description">Descrição: %s</string>
+    <string name="txt_workshops">Oficinas</string>
+    <string name="txt_friend_indication">Indicação</string>
+    <string name="txt_register">Cadastrar</string>
+    <string name="txt_register_associate">Cadastrar Associado</string>
+    <string name="txt_hello_associate">Associado: %s</string>
+    <string name="txt_hello_consultant">Consultor: %s</string>
+
+
+    <string name="btn_friend_indication">Indicar</string>
+    <string name="btn_associate">Associado</string>
+    <string name="btn_consultant">Consultor</string>
+
+    <string name="cd_img_application">Logo do aplicativo</string>
+    <string name="cd_img_workshops">Icone de Oficinas</string>
+    <string name="cd_img_indication">Icone de Indicação</string>
+    <string name="cd_img_register">Icone de Registro</string>
+    <string name="cd_img_workshop">Logo da Oficina</string>
+    <string name="cd_img_email">Icone de E-mail</string>
+    <string name="cd_img_location">Icone de Endereço</string>
+    <string name="cd_img_phone">Icone de Telefone</string>
+
 </resources>

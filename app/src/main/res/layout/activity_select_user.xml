@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".ui.activity.selectUser.SelectUserActivity">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            style="@style/ImgLogo"
+            android:contentDescription="@string/cd_img_application"
+            android:src="@drawable/ic_hinova"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtTittle"
+            style="@style/lbl_tittle"
+            android:text="@string/txt_tittle_select_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgLogo" />
+
+        <View
+            android:id="@+id/containerComponents"
+            style="@style/ContainerComponents"
+            android:layout_height="175dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtTittle" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAssociate"
+            style="@style/Button"
+            android:text="@string/btn_associate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/containerComponents" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnConsultant"
+            style="@style/Button"
+            android:text="@string/btn_consultant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnAssociate" />
+
+        <TextView
+            android:id="@+id/txtVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:gravity="bottom"
+            android:text="@string/lbl_version"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/containerComponents" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

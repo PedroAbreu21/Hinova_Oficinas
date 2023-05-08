@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".ui.activity.register.FormRegisterActivity">
+
+        <TextView
+            android:id="@+id/txtTittle"
+            style="@style/lbl_tittle"
+            android:text="@string/txt_register_associate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/containerComponents"
+            style="@style/ContainerComponents"
+            android:layout_height="570dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtTittle" />
+
+        <EditText
+            android:id="@+id/edtName"
+            style="@style/Edit_Text"
+            android:autofillHints="name"
+            android:drawableEnd="@drawable/ic_person"
+            android:hint="@string/edt_name_hilt"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/containerComponents" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            style="@style/Edit_Text"
+            android:autofillHints="emailAddress"
+            android:drawableEnd="@drawable/ic_email"
+            android:hint="@string/edt_email_hilt"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtName" />
+
+        <EditText
+            android:id="@+id/edtCpf"
+            style="@style/Edit_Text"
+            android:drawableEnd="@drawable/ic_cpf"
+            android:hint="@string/edt_cpf_hilt"
+            android:inputType="number|numberSigned"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtEmail" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            style="@style/Edit_Text"
+            android:autofillHints="phone"
+            android:drawableEnd="@drawable/ic_phone"
+            android:hint="@string/edt_phone_hilt"
+            android:inputType="number|numberSigned"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtCpf"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/edtPlate"
+            style="@style/Edit_Text"
+            android:drawableEnd="@drawable/ic_plate"
+            android:hint="@string/edt_plate_hilt"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtPhone" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            style="@style/Edit_Text"
+            android:autofillHints="password"
+            android:drawableEnd="@drawable/ic_eye"
+            android:hint="@string/edt_password_hilt"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtPlate" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegister"
+            style="@style/Button"
+            android:text="@string/txt_register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtPassword" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".ui.activity.home.HomeActivity">
+
+        <TextView
+            android:id="@+id/txtTittle"
+            style="@style/lbl_tittle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Bem Vindo: Pedro" />
+
+        <View
+            android:id="@+id/btnWorkshop"
+            style="@style/btn_home_screen"
+            app:layout_constraintEnd_toStartOf="@id/btnSecundary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtTittle" />
+
+        <ImageView
+            android:id="@+id/imgWorkshops"
+            style="@style/img_home_screen"
+            android:contentDescription="@string/cd_img_workshops"
+            android:src="@drawable/ic_workshop"
+            app:layout_constraintEnd_toEndOf="@id/btnWorkshop"
+            app:layout_constraintStart_toStartOf="@id/btnWorkshop"
+            app:layout_constraintTop_toTopOf="@id/btnWorkshop" />
+
+        <TextView
+            android:id="@+id/txtWorkshops"
+            style="@style/txt_home_screen"
+            android:text="@string/txt_workshops"
+            app:layout_constraintBottom_toBottomOf="@id/btnWorkshop"
+            app:layout_constraintEnd_toEndOf="@id/btnWorkshop"
+            app:layout_constraintStart_toStartOf="@id/btnWorkshop"
+            app:layout_constraintTop_toBottomOf="@id/imgWorkshops" />
+
+        <View
+            android:id="@+id/btnSecundary"
+            style="@style/btn_home_screen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnWorkshop"
+            app:layout_constraintTop_toBottomOf="@id/txtTittle" />
+
+        <ImageView
+            android:id="@+id/imgFriendIndication"
+            style="@style/img_home_screen"
+            android:contentDescription="@string/cd_img_indication"
+            android:src="@drawable/ic_friend"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/btnSecundary"
+            app:layout_constraintStart_toStartOf="@id/btnSecundary"
+            app:layout_constraintTop_toTopOf="@id/btnSecundary" />
+
+        <TextView
+            android:id="@+id/txtFriendIndication"
+            style="@style/txt_home_screen"
+            android:text="@string/txt_friend_indication"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/btnSecundary"
+            app:layout_constraintEnd_toEndOf="@id/btnSecundary"
+            app:layout_constraintStart_toStartOf="@id/btnSecundary"
+            app:layout_constraintTop_toBottomOf="@id/imgFriendIndication" />
+
+        <ImageView
+            android:id="@+id/imgRegister"
+            style="@style/img_home_screen"
+            android:contentDescription="@string/cd_img_register"
+            android:src="@drawable/ic_registration"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/btnSecundary"
+            app:layout_constraintStart_toStartOf="@id/btnSecundary"
+            app:layout_constraintTop_toTopOf="@id/btnSecundary" />
+
+        <TextView
+            android:id="@+id/txtRegister"
+            style="@style/txt_home_screen"
+            android:text="@string/txt_register"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/btnSecundary"
+            app:layout_constraintEnd_toEndOf="@id/btnSecundary"
+            app:layout_constraintStart_toStartOf="@id/btnSecundary"
+            app:layout_constraintTop_toBottomOf="@id/imgRegister" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

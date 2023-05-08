@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.activity.workshopDetail.WorkShopDetailActivity">
+
+    <View
+        android:id="@+id/containerComponents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/container_components"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgWorkshop" />
+
+    <ImageView
+        android:id="@+id/imgWorkshop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/cd_img_workshop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_email" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toTopOf="@id/containerComponents"
+        tools:text="Oficina Lata Velha" />
+
+    <ImageView
+        android:id="@+id/imgEmail"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/cd_img_email"
+        android:src="@drawable/ic_email"
+        app:layout_constraintBottom_toBottomOf="@id/txtEmail"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toTopOf="@id/txtEmail" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/imgEmail"
+        app:layout_constraintTop_toBottomOf="@id/txtDescription"
+        tools:text="Oficina Lata Velha" />
+
+    <ImageView
+        android:id="@+id/imgLocation"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/cd_img_location"
+        android:src="@drawable/ic_location"
+        app:layout_constraintBottom_toBottomOf="@id/txtLocation"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toTopOf="@id/txtLocation" />
+
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/imgLocation"
+        app:layout_constraintTop_toBottomOf="@id/txtEmail"
+        tools:text="Oficina Lata Velha" />
+
+    <ImageView
+        android:id="@+id/imgPhone1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/cd_img_phone"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintBottom_toBottomOf="@id/txtPhone1"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toTopOf="@id/txtPhone1" />
+
+    <TextView
+        android:id="@+id/txtPhone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/imgPhone1"
+        app:layout_constraintTop_toBottomOf="@id/txtLocation"
+        tools:text="Oficina Lata Velha" />
+
+    <ImageView
+        android:id="@+id/imgPhone2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/cd_img_phone"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintBottom_toBottomOf="@id/txtPhone2"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toTopOf="@id/txtPhone2" />
+
+    <TextView
+        android:id="@+id/txtPhone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/imgPhone2"
+        app:layout_constraintTop_toBottomOf="@id/txtPhone1"
+        tools:text="Oficina Lata Velha" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/middle_gray"
+        android:layout_marginTop="10dp"
+        android:maxLength="650"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/txtName"
+        tools:text="Descrição: aaaa" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "178745980575",
+    "project_id": "hinovaoficinas-5bb0d",
+    "storage_bucket": "hinovaoficinas-5bb0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178745980575:android:43c6386d6b252182dbd4aa",
+        "android_client_info": {
+          "package_name": "com.example.hinovaoficinas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178745980575-elvgjmpep5mk83gnadcld0fjbuuvb22s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hinovaoficinas",
+            "certificate_hash": "a3df8a8a3ce06ad5c7af495f501588a3d745a996"
+          }
+        },
+        {
+          "client_id": "178745980575-90q7sgpje8jcj7ththu9rcn94c6c2tas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDdIANm2YVe6uosTtBu_ucGrFIa72FewI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178745980575-90q7sgpje8jcj7ththu9rcn94c6c2tas.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

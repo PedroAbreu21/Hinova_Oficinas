@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".ui.activity.indication.IndicationActivity">
+
+        <TextView
+            android:id="@+id/txtTittle"
+            style="@style/lbl_tittle"
+            android:text="@string/txt_tittle_friend_indication"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/containerComponents"
+            style="@style/ContainerComponents"
+            android:layout_height="390dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtTittle" />
+
+        <TextView
+            android:id="@+id/txtSubTittle"
+            style="@style/txtSubtittle"
+            android:text="@string/txt_sub_tittle_friend_indication"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/containerComponents" />
+
+        <EditText
+            android:id="@+id/edtName"
+            style="@style/Edit_Text"
+            android:drawableEnd="@drawable/ic_person"
+            android:hint="@string/edt_name_hilt"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtSubTittle" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            style="@style/Edit_Text"
+            android:drawableEnd="@drawable/ic_email"
+            android:hint="@string/edt_email_hilt"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtName" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            style="@style/Edit_Text"
+            android:drawableEnd="@drawable/ic_phone"
+            android:hint="@string/edt_phone_hilt"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtEmail" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnIndication"
+            style="@style/Button"
+            android:text="@string/btn_friend_indication"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtPhone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

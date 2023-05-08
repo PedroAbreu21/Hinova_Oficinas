@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    tools:showIn="@layout/activity_workshop">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="4dp">
+
+        <ImageView
+            android:id="@+id/imgWorkshop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/cd_img_workshop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_person" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/imgWorkshop"
+            app:layout_constraintStart_toEndOf="@id/imgWorkshop"
+            app:layout_constraintTop_toTopOf="@id/imgWorkshop"
+            tools:text="Oficinalizando" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/middle_gray"
+            android:ellipsize="end"
+            android:lines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgWorkshop"
+            tools:text="Somos Somos uma oficinaSomos uma oficinaSomos uma oficinauma oficina" />
+
+        <ImageView
+            android:id="@+id/imgEmail"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:contentDescription="@string/cd_img_email"
+            android:src="@drawable/ic_email"
+            app:layout_constraintBottom_toBottomOf="@id/txtEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txtEmail" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/imgEmail"
+            app:layout_constraintStart_toEndOf="@id/imgEmail"
+            app:layout_constraintTop_toBottomOf="@id/txtDescription"
+            tools:text="Somos uma oficina expecializada" />
+
+        <ImageView
+            android:id="@+id/imgLocation"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="4dp"
+            android:contentDescription="@string/cd_img_location"
+            android:src="@drawable/ic_location"
+            app:layout_constraintBottom_toBottomOf="@id/txtLocation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgEmail" />
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/imgLocation"
+            app:layout_constraintTop_toBottomOf="@id/imgEmail"
+            tools:text="Somos uma oficina exexpecializadaexpecializadaexpecializadaexpecializadaexpecializadapecializada" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
